@@ -1,0 +1,182 @@
+:root{
+    --cream:#F8F4EC;
+    --brown:#2F1C12;
+    --orange:#F28C28;
+    --border:#E8DDD0;
+    --text:#4A3C35;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:var(--cream);
+    font-family:'Inter',sans-serif;
+    color:var(--text);
+}
+
+/* NAVBAR */
+
+.navbar{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-size:38px;
+    font-family:'Playfair Display',serif;
+    color:var(--brown);
+}
+
+.logo i{
+    background:var(--brown);
+    color:white;
+
+    width:55px;
+    height:55px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:16px;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--brown);
+    font-size:20px;
+}
+
+.btn-primary{
+    border:none;
+    background:var(--brown);
+    color:white;
+
+    padding:14px 28px;
+
+    border-radius:16px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.btn-secondary{
+    background:white;
+    border:1px solid var(--border);
+
+    padding:14px 28px;
+    border-radius:16px;
+
+    cursor:pointer;
+    font-size:18px;
+}
+
+/* HERO */
+
+.hero{
+    min-height:85vh;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:60px 80px;
+}
+
+.hero-left{
+    width:55%;
+}
+
+.badge{
+    border:1px solid var(--border);
+    padding:10px 18px;
+    border-radius:50px;
+
+    background:white;
+}
+
+.hero-left h1{
+    margin-top:40px;
+
+    font-size:90px;
+    line-height:1.05;
+
+    color:var(--brown);
+    font-family:'Playfair Display',serif;
+}
+
+.hero-left h1 span{
+    color:var(--orange);
+}
+
+.hero-left p{
+    margin-top:30px;
+    max-width:750px;
+
+    font-size:28px;
+    line-height:1.6;
+}
+
+.hero-buttons{
+    margin-top:40px;
+
+    display:flex;
+    gap:20px;
+}
+
+.hero-right{
+    width:40%;
+    display:flex;
+    justify-content:center;
+}
+
+.phone-card{
+    width:600px;
+    height:700px;
+
+    border-radius:35px;
+    background:#F0E0D0;
+
+    padding:40px;
+
+    border:2px solid var(--border);
+
+    transform:rotate(2deg);
+}
+
+.category-card{
+    display:flex;
+    justify-content:space-between;
+
+    background:white;
+
+    padding:18px 24px;
+    margin-bottom:18px;
+
+    border-radius:18px;
+}
+
+.category-card span{
+    font-size:28px;
+    font-weight:600;
+}
+
+.category-card small{
+    font-size:22px;
+}
